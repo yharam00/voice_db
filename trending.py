@@ -85,7 +85,7 @@ def app():
             st.session_state["check_reset"] = False
 
         # 제목 
-        st.header("음성 챗봇 기본형")
+        st.title(":violet[Voice Chatbot] Baseline Model")
         # 구분선
         st.markdown("---")
 
@@ -109,7 +109,7 @@ def app():
         with st.sidebar:
 
             # Open AI API 키 입력받기
-            openai.api_key = st.text_input(label="OPENAI API 키", placeholder="Enter Your API Key", value="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", type="password")
+            openai.api_key = st.text_input(label="OPENAI API 키", placeholder="Enter Your API Key", type="password")
 
             st.markdown("---")
 

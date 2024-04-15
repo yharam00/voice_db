@@ -5,7 +5,9 @@ from streamlit_option_menu import option_menu
 
 import home, trending, account, your, about
 st.set_page_config(
-        page_title="voice db",
+        page_title="Voice DB",
+        layout="wide",
+        initial_sidebar_state='collapsed'
 )
 
 
@@ -26,11 +28,11 @@ class MultiApp:
         # app = st.sidebar(
         with st.sidebar:        
             app = option_menu(
-                menu_title='voice db',
-                options=['Home','Account','Voice Chatbot','Your Posts','about'],
-                icons=['house-fill','person-circle','trophy-fill','chat-fill','info-circle-fill'],
+                menu_title='Voice DB',
+                options=['Home','Your Posts','Account','Voice Chatbot','about'],
+                icons=['house-fill','chat-fill','person-circle','trophy-fill','info-circle-fill'],
                 menu_icon='chat-text-fill',
-                default_index=1,
+                default_index=2,
                 styles={
                     "container": {"padding": "5!important","background-color":'black'},
         "icon": {"color": "white", "font-size": "23px"}, 

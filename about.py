@@ -1,7 +1,7 @@
 import streamlit as st
 
 def app():
-    st.subheader('Voice DB의 기능은 다음과 같습니다.')
+    st.header('Voice DB의 기능은 다음과 같습니다.')
     st.markdown('1. 회원가입 가능: 이메일 형식이기만 하면 실제 존재하지 않는 이메일을 사용해도 괜찮습니다.')
     st.markdown('2. 글쓰기 기능: 글이 firebase 데이터베이스에 저장되어 누가 언제 어떤 내용의 글을 썼는지 알 수 있습니다.')
     st.markdown('3. 게시판 기능: 한번 작성한 글은 본인이 삭제하기 전까지는 새로고침하거나, 앱을 종료하고 다시 실행해도 삭제되지 않습니다.')
