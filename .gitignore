@@ -216,4 +216,6 @@ $RECYCLE.BIN/
 ffcache*
 *.log
 
+
+*.json
 *.mp3
